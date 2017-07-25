@@ -1,5 +1,5 @@
 /**
- * Created by Administrator on 2017/7/24.
+ * Created by Administrator on 2017/7/25.
  */
 var express=require('express');
 var mysql=require('mysql');
@@ -17,7 +17,7 @@ var pool=mysql.createPool({
 
 router.get('/',function (req,res) {
     res.header("Access-Control-Allow-Origin", "*");
-    pool.query('SELECT * from nav',function (err,rows,fields) {
+    pool.query('SELECT * from tab',function (err,rows,fields) {
         if(err) throw err;
         res.send(rows)
     });
