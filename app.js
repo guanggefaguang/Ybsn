@@ -16,6 +16,8 @@ var xwdt=require('./routes/xwdt');
 var students=require('./routes/students');
 var msxy=require('./routes/msxy');
 var yyxy=require('./routes/yyxy');
+var zhxy=require('./routes/zhxy');
+var gjjl=require('./routes/gjjl');
 
 var app = express();
 
@@ -42,6 +44,8 @@ app.use('/xwdt',xwdt);
 app.use('/students',students);
 app.use('/msxy',msxy);
 app.use('/yyxy',yyxy);
+app.use('/zhxy',zhxy);
+app.use('/gjjl',gjjl);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
