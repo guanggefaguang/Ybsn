@@ -20,4 +20,4 @@ router.get('/',function (req,res) {
         res.send(rows)
     });
 });
-module.exports=router;[]
+module.exports=router;

@@ -12,6 +12,10 @@ var get2=require('./routes/get2');
 var jstd=require('./routes/jstd');
 var yxxy=require('./routes/yxxy');
 var wzgd=require('./routes/wzgd');
+var xwdt=require('./routes/xwdt');
+var students=require('./routes/students');
+var msxy=require('./routes/msxy');
+var yyxy=require('./routes/yyxy');
 
 var app = express();
 
@@ -34,6 +38,10 @@ app.use('/about',get2);
 app.use('/jstd',jstd);
 app.use('/yxxy',yxxy);
 app.use('/wzgd',wzgd);
+app.use('/xwdt',xwdt);
+app.use('/students',students);
+app.use('/msxy',msxy);
+app.use('/yyxy',yyxy);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

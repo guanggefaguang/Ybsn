@@ -15,7 +15,7 @@ var pool=mysql.createPool({
 
 router.get('/',function (req,res) {
     res.header("Access-Control-Allow-Origin", "*");
-    pool.query('SELECT * from yxxy',function (err,rows,fields) {
+    pool.query('SELECT * from xwdt',function (err,rows,fields) {
         if(err) throw err;
         res.send(rows)
     });
