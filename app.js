@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var get=require('./routes/get');
 var get2=require('./routes/get2');
 var jstd=require('./routes/jstd');
 var yxxy=require('./routes/yxxy');
@@ -18,6 +17,9 @@ var msxy=require('./routes/msxy');
 var yyxy=require('./routes/yyxy');
 var zhxy=require('./routes/zhxy');
 var gjjl=require('./routes/gjjl');
+var snav=require('./routes/snav');
+var teacher=require('./routes/teacher');
+var team=require('./routes/team');
 
 var app = express();
 
@@ -35,7 +37,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/nav',get);
 app.use('/about',get2);
 app.use('/jstd',jstd);
 app.use('/yxxy',yxxy);
@@ -46,6 +47,9 @@ app.use('/msxy',msxy);
 app.use('/yyxy',yyxy);
 app.use('/zhxy',zhxy);
 app.use('/gjjl',gjjl);
+app.use('/snav',snav);
+app.use('/teacher',teacher);
+app.use('/team',team);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
