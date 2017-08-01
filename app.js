@@ -20,6 +20,8 @@ var gjjl=require('./routes/gjjl');
 var snav=require('./routes/snav');
 var teacher=require('./routes/teacher');
 var team=require('./routes/team');
+var news=require('./routes/news');
+var learn=require('./routes/learn');
 
 var app = express();
 
@@ -50,6 +52,8 @@ app.use('/gjjl',gjjl);
 app.use('/snav',snav);
 app.use('/teacher',teacher);
 app.use('/team',team);
+app.use('/news',news);
+app.use('/learn',learn);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
